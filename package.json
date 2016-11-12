@@ -1,0 +1,26 @@
+{
+  "name": "couture",
+  "version": "1.0.0",
+  "description": "A clothing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maybulb/couture.git"
+  },
+  "keywords": [
+    "clothing",
+    "couture"
+  ],
+  "author": "Maybulb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maybulb/couture/issues"
+  },
+  "homepage": "https://github.com/Maybulb/couture#readme",
+  "dependencies": {
+    "electron": "^1.4.6"
+  }
+}
