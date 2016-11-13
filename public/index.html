@@ -11,16 +11,13 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="twelve columns">
+				<div class="six columns titles">
+					<img src="img/logo.svg">
 					<h2>Couture</h2>
-					<h5 class="sub">A shopper's helping hand</h5>
-					<br>
+					<h5 class="sub">A shopper's helping hand. Clothing recommendations tailored to your specific style.</h5>
 				</div>
-			</div>
-			<div class="row">
 				<div class="six columns">
 					<h4>Parameters</h4>
-					
 					<label for="style">Style</label>
 					<select id="style" class="u-full-width">
 						<option value="regular">Regular</option>
@@ -38,20 +35,38 @@
 					<input value="100" class="u-full-width" type="range" min="30" max="500" step="10" id="budget">
 					<button onclick="submit();">Shop</button>
 				</div>
-				<div class="six columns" id="results">
-					<h4 class="hide">Results</h4>
-					<div class="top">
-						<b id="top-title"></b>
-						<a target="_blank" id="top-link" href="#"><i id="top-icon" class="fa fa-amazon" aria-hidden="true"></i></a>
-						<img id="top-photo" class="photo"/>
-						<p id="top-desc"></p>
+			</div>
+
+			<div class="row">
+				<div class="twelve columns" id="results">
+					<h4>Results</h4>
+
+					<div class="row">
+						<div class="top">
+							<div class="six columns" id="results">
+								<a target="_blank" id="top-link" href="#"><i id="top-icon" class="fa fa-amazon" aria-hidden="true"></i></a>
+								<img id="top-photo" class="photo" src="http://loremflickr.com/600/800/dog,dogs"/>
+							</div>
+							<div class="six columns" id="results">
+								<h5 id="top-title"></h5>
+								<p id="top-desc"></p>
+							</div>
+						</div>
 					</div>
-					<div class="bottom">
-						<b id="bottom-title"></b>
-						<a target="_blank" id="bottom-link" href="#"><i id="bottom-icon" class="fa fa-amazon" aria-hidden="true"></i></a>
-						<img id="bottom-photo" class="photo"/>
-						<p id="bottom-desc"></p>
+
+					<div class="row">
+						<div class="bottom">
+							<div class="six columns" id="results">
+								<a target="_blank" id="bottom-link" href="#"><i id="bottom-icon" class="fa fa-amazon" aria-hidden="true"></i></a>
+								<img id="bottom-photo" class="photo" src="http://loremflickr.com/600/800/dog,dogs"/>
+							</div>
+							<div class="six columns" id="results">
+								<h5 id="bottom-title"></h5>
+								<p id="bottom-desc"></p>
+							</div>
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>

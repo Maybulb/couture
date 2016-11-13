@@ -1,23 +1,67 @@
+h2, h4 {
+  font-weight: 500; }
+
 body {
-  padding: 5%; }
-  body .sub {
-    padding-left: 2%;
-    margin-top: -3%; }
-  body .top {
-    margin-top: 5%;
-    margin-bottom: 5%; }
-  body .bottom {
-    margin-top: 5%;
-    margin-bottom: 5%; }
-  body img {
-    text-align: center; }
-  body .left {
-    float: left; }
-  body .right {
-    float: right; }
-  body .fa {
-    font-size: 30px;
-    float: right;
-    display: none; }
-  body .hide {
-    display: none; }
+  padding: 64px;
+  font-family: 'Avenir Next', 'Avenir', sans-serif; }
+
+.sub {
+  margin-top: -3%; }
+
+.top {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.bottom {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+img.photo {
+  text-align: center;
+  width: 100%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.fa {
+  font-size: 30px;
+  float: right;
+  display: none; }
+
+#displayBudget::before {
+  content: '$'; }
+
+#top-title {
+  font-weight: 500;
+  font-size: 1.5em; }
+
+#results h4 {
+  padding-top: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-top: 1px solid #29ACDD; }
+
+.container {
+  max-width: 800px !important;
+  min-width: 400px; }
+
+.titles img {
+  display: block;
+  width: 36%;
+  margin: 0 auto; }
+
+.titles h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #29ACDD; }
+
+.titles h5 {
+  text-align: center;
+  font-size: 1.25em; }
+
+#top-desc, #bottom-desc {
+  text-indent: -4px; }
