@@ -32,6 +32,9 @@ ipcRenderer.on('response', function(event, body) {
 	$('#bottom-icon').css('display', 'inline-block');
 	$('#top-link').attr('href', body.top.url);
 	$('#bottom-link').attr('href', body.bottom.url);
+
+	// result header
+	$('.hide').css('display', 'inline-block');
 });
 
 function makeUL(array) {
