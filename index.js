@@ -8,7 +8,7 @@ const electron = require('electron')
 app.on('ready', function() {
 	global.mainWindow = new BrowserWindow({
 		width: 1000, height: 600,
-		resizable: true
+		resizable: true, frame: false
 	});
 
 	// global.mainWindow.openDevTools();

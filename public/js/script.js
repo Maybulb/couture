@@ -40,6 +40,9 @@ ipcRenderer.on('response', function(event, body) {
 
 	// result header
 	$('.hide').css('display', 'inline-block');
+
+	// show results
+	$('#resultBlock').css('display', 'block');
 });
 
 function makeUL(array) {

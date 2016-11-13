@@ -1,3 +1,6 @@
+#resultBlock {
+  display: none; }
+
 h2, h4 {
   font-weight: 500; }
 
@@ -39,6 +42,13 @@ img.photo {
   font-size: 1.5em; }
 
 #results h4 {
+  padding-top: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-top: 1px solid #29ACDD; }
+
+#total hr {
   padding-top: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
