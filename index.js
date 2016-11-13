@@ -1,6 +1,7 @@
 const electron = require('electron')
 	, app = electron.app
-	, BrowserWindow = electron.BrowserWindow;
+	, BrowserWindow = electron.BrowserWindow
+	, ipc = electron.ipcMain;
 
 app.on('ready', function() {
 	var mainWindow = new BrowserWindow({

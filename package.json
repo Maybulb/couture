@@ -4,7 +4,7 @@
   "description": "A clothing app",
   "main": "index.js",
   "scripts": {
-    "test": "electron ."
+    "start": "gulp && electron ."
   },
   "repository": {
     "type": "git",
