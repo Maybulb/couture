@@ -9,14 +9,11 @@ function submit() {
 }
 
 ipcRenderer.on('response', function(event, body) {
-	console.log(body);
+	body = JSON.parse(body);
 
 	$('#top-photo').attr('src', body.top.image);
 	$('#bottom-photo').attr('src', body.bottom.image);
 
-	$('#top-title').attr('value', body.top.title);
-	$('#bottom-title').attr('value', body.bottom.title);
-
-	$('#top-title').attr('value', body.top.title);
-	$('#bottom-title').attr('value', body.bottom.title);	
+	$('#top-title').attr('value', body.top);
+	$('#bottom-title').attr('value', body.bottom);
 });

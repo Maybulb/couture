@@ -20,11 +20,10 @@ app.on('ready', function() {
 	});
 
 	ipcMain.on("submit", (e, style, gender) => {
-		var url = util.format('http://localhost:8080/api/%s/%s/%s', gender, style, 'top');
+		var url = util.format('http://localhost:8080/api/%s/%s', gender, style);
 		console.log(url);
 
 		request.get(url, (err, res, body) => {
-			console.log('testing');
 			if (!err && res.statusCode == 200) {
 				global.mainWindow.webContents.send('response', body);
 			}
