@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
 		<link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -18,17 +17,19 @@
 			<div class="row">
 				<div class="twelve columns">
 					<p>Choose your style</p>
-					<select>
+					<select id="style">
 						<option value="regular">Regular</option>
 						<option value="hipster">Hipster</option>
 						<option value="athleisure">Athleisure</option>
 					</select>
-					<select>
+					<select id="gender">
 						<option value="male">Male</option>
 						<option value="female">Female</option>
+						<option value="other">Other</option>
 					</select>
-					<button type="submit">Shop</button>
+					<button onclick="submit();">Shop</button>
 				</div>
 			</div>
 		</div>
+		<script src="js/script.js"></script>
  </html>
