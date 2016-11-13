@@ -14,6 +14,12 @@ ipcRenderer.on('response', function(event, body) {
 	$('#top-photo').attr('src', body.top.image);
 	$('#bottom-photo').attr('src', body.bottom.image);
 
-	$('#top-title').attr('value', body.top);
-	$('#bottom-title').attr('value', body.bottom);
+	$('#top-title').text(body.top.title);
+	$('#bottom-title').text(body.bottom.title);
+
+	$('#top-desc').text(body.top.note);
+	$('#bottom-desc').text(body.bottom.note);
+
+	$('#top-brand').text(body.top.brand);
+	$('#bottom-brand').text(body.bottom.brand);
 });
