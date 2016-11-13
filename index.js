@@ -6,29 +6,28 @@ const electron = require('electron')
 	, util = require('util');
 
 app.on('ready', function() {
-	var mainWindow = new BrowserWindow({
+	global.mainWindow = new BrowserWindow({
 		width: 1000, height: 600,
 		resizable: true
 	});
 
-	mainWindow.openDevTools();
+	global.mainWindow.openDevTools();
 
-	mainWindow.loadURL('file://' + __dirname + '/public/index.html');
+	global.mainWindow.loadURL('file://' + __dirname + '/public/index.html');
 
-	mainWindow.on('closed', function() {
-		mainWindow = null
+	global.mainWindow.on('closed', function() {
+		global.mainWindow = null
 	});
-});
 
-ipcMain.on("submit", function (e, style, gender) {
+	ipcMain.on("submit", (e, style, gender) => {
+		var url = util.format('http://localhost:8080/api/%s/%s/%s', gender, style, 'top');
+		console.log(url);
 
-	var url = util.format('http://localhost:8080/api/%s/%s/%s', gender, style, 'top');
-	console.log(url);
-
-	request.get(url, function(err, res, body) {
-		console.log('testing');
-		if (!err && res.statusCode == 200) {
-			console.log(body);
-		}
+		request.get(url, (err, res, body) => {
+			console.log('testing');
+			if (!err && res.statusCode == 200) {
+				global.mainWindow.webContents.send('response', body);
+			}
+		});
 	});
 });

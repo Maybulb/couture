@@ -7,3 +7,7 @@ function submit() {
 
 	ipcRenderer.send('submit', styleValue, genderValue);
 }
+
+ipcRenderer.on('response', function(event, body) {
+	console.log(body);
+});
