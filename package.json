@@ -22,5 +22,9 @@
   "homepage": "https://github.com/Maybulb/couture#readme",
   "dependencies": {
     "electron": "^1.4.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   }
 }
