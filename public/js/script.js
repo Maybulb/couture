@@ -33,6 +33,11 @@ ipcRenderer.on('response', function(event, body) {
 	$('#top-link').attr('href', body.top.url);
 	$('#bottom-link').attr('href', body.bottom.url);
 
+	// price
+	$('#top-price').text(body.top.cost.pretty);
+	$('#bottom-price').text(body.bottom.cost.pretty);
+	$('#total-price').text('$' + body.totalCost.raw / 100);
+
 	// result header
 	$('.hide').css('display', 'inline-block');
 });
