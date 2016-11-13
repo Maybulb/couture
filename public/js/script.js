@@ -1,8 +1,9 @@
-// nothing yet
-
-const {ipcRenderer} = require('electron')
-const $ = require("jquery");
+const ipcRenderer = require('electron').ipcRenderer
+	, $ = require('jquery');
 
 function submit() {
-	ipcRenderer.send("submit", $("#style option:selected").text(), $("#gender option:selected").text())
+	var styleValue = $('#style option:selected').attr('value')
+		, genderValue = $('#gender option:selected').attr('value')
+
+	ipcRenderer.send('submit', styleValue, genderValue);
 }
