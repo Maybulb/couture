@@ -11,7 +11,7 @@ app.on('ready', function() {
 		resizable: true
 	});
 
-	global.mainWindow.openDevTools();
+	// global.mainWindow.openDevTools();
 
 	global.mainWindow.loadURL('file://' + __dirname + '/public/index.html');
 

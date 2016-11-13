@@ -1,14 +1,15 @@
 body {
   padding: 5%; }
-
-.sub {
-  padding-left: 2%;
-  margin-top: -3%; }
-
-.top {
-  margin-top: 5%;
-  margin-bottom: 5%; }
-
-.bottom {
-  margin-top: 5%;
-  margin-bottom: 5%; }
+  body .sub {
+    padding-left: 2%;
+    margin-top: -3%; }
+  body .top {
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  body .bottom {
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  body .fa {
+    font-size: 30px;
+    float: right;
+    display: none; }
