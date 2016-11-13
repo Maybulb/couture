@@ -1,5 +1,5 @@
 body {
-  padding: 5%;
+	padding: 5%;
 }
 
 .sub {
@@ -9,8 +9,7 @@ body {
 
 .top {
   margin-top: 5%;
-  margin-bottom: 5%;
-}
+  margin-bottom: 5%; }
 
 .bottom {
   margin-top: 5%;
@@ -27,4 +26,8 @@ img {
 
 .right {
 	float: right;
+}
+
+.fa { 
+	font-size: 30px; float: right; display: none;
 }
