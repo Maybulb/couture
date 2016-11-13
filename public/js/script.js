@@ -10,4 +10,10 @@ function submit() {
 
 ipcRenderer.on('response', function(event, body) {
 	console.log(body);
+
+	$('#top-photo').attr('src', body.top.image);
+	$('#bottom-photo').attr('src', body.bottom.image);
+
+	$('#top-info').attr('value', body.top.title);
+	$('#bottom-info').attr('value', body.bottom.title);
 });
