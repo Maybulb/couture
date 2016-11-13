@@ -19,16 +19,22 @@
 			<div class="row">
 				<div class="six columns">
 					<h4>Parameters</h4>
-					<select id="style">
+					
+					<label for="style">Style</label>
+					<select id="style" class="u-full-width">
 						<option value="regular">Regular</option>
 						<option value="hipster">Hipster</option>
 						<option value="athleisure">Athleisure</option>
 					</select>
-					<select id="gender">
+					<label for="gender">Gender</label>
+					<select id="gender" class="u-full-width">
 						<option value="male">Male</option>
 						<option value="female">Female</option>
 						<option value="other">Other</option>
 					</select>
+					<br>
+					<label for="budget"><span class="left">Budget</span><span class="right" id="displayBudget"></span></label>
+					<input value="100" class="u-full-width" type="range" min="30" max="500" step="10" id="budget">
 					<button onclick="submit();">Shop</button>
 				</div>
 				<div class="six columns" id="results">

@@ -19,8 +19,8 @@ app.on('ready', function() {
 		global.mainWindow = null
 	});
 
-	ipcMain.on("submit", (e, style, gender) => {
-		var url = util.format('http://localhost:8080/api/%s/%s', gender, style);
+	ipcMain.on("submit", (e, style, gender, budget) => {
+		var url = util.format('http://localhost:8080/api/%s/%s?p=%s', gender, style, budget);
 		console.log(url);
 
 		request.get(url, (err, res, body) => {
