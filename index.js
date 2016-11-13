@@ -20,7 +20,7 @@ app.on('ready', function() {
 	});
 
 	ipcMain.on("submit", (e, style, gender, budget) => {
-		var url = util.format('http://localhost:8080/api/%s/%s?p=%s', gender, style, budget);
+		var url = util.format('https://couture-api.herokuapp.com/api/%s/%s?p=%s', gender, style, budget);
 		console.log(url);
 
 		request.get(url, (err, res, body) => {
