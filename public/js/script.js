@@ -2,6 +2,7 @@ const ipcRenderer = require('electron').ipcRenderer
 	, $ = require('jquery');
 
 function submit() {
+	$(".spinner").css("display", "block");
 	var styleValue = $('#style option:selected').attr('value')
 		, genderValue = $('#gender option:selected').attr('value')
 		, budgetValue = $("#budget").val()
@@ -37,6 +38,9 @@ ipcRenderer.on('response', function(event, body) {
 	$('#top-price').text(body.top.cost.pretty);
 	$('#bottom-price').text(body.bottom.cost.pretty);
 	$('#total-price').text('$' + body.totalCost.raw / 100);
+
+	// loaders
+	$(".spinner").css("display", "none");
 
 	// result header
 	$('.hide').css('display', 'inline-block');

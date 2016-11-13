@@ -109,8 +109,9 @@ img.photo {
   margin: 100px auto;
   width: 50px;
   height: 40px;
-  text-align: center;
   font-size: 10px;
+  display: none;
+  text-align: center;
 }
 
 .spinner > div {
@@ -118,7 +119,8 @@ img.photo {
   height: 100%;
   width: 6px;
   display: inline-block;
-
+  text-align: center;
+  
   -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
   animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
@@ -156,4 +158,8 @@ img.photo {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+.center {
+	text-align: center;
 }
